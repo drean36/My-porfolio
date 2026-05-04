@@ -1,0 +1,213 @@
+*{ 
+    margin: 0;
+    padding: 0;a
+}
+
+.navbar {
+    margin-top:5px;
+    display: flex;
+    justify-content: space-between; /* left at right */
+    align-items: center;
+    background: linear-gradient(to right,  #011401 , #228B22);;
+    padding: 5px 20px;
+}
+
+.logo img {
+    width: 200px; /* size ng logo ko */
+}
+
+.nav-links {
+    margin-right: 50px;
+    list-style: none;
+    display: flex;
+    gap: 150px; /* space sa pagitan nila */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    background:  #246924; 
+    border-radius: 15px;
+    border: 2px solid floralwhite;
+    padding: 20px 10px;
+}
+
+.nav-links a:hover {
+    background: linear-gradient(to right, #011401, #1d641d); 
+}
+
+body{
+   background: linear-gradient(to right, #474646, #ffffff);
+   height: 100vh;
+   width: 100vw;
+}
+hr {
+   margin-top: 5px;
+   border: 4px solid black;
+   width: 100vw;
+}
+
+footer {
+    position:absolute;
+    bottom:0%;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #022002, #228B22);
+    color: white;
+    font-size: 12px;
+    width: 97vw;
+}
+
+
+
+
+
+.form-wrapper {
+    margin-top: 50px;
+    margin-left: 800px;
+    display: flex;
+    background: linear-gradient(to bottom, #4b4a4a, #ffffff);
+    padding: 30px;
+    border-radius: 25px;
+    gap: 30px;
+    width: 700px;
+    height: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Left Side Styles */
+.form-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-left label {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.form-left input {
+    padding: 12px;
+    background: #dcdcdc;
+    border-color:3px solid black;
+}
+
+/* Right Side (Floating Card) Styles */
+.form-right {
+    flex: 1;
+    background: linear-gradient(to top, #4b4a4a, #918d8d);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+.msg-label {
+    font-style: italic;
+    background: #c0c0c0;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    font-size: 30px;
+    
+}
+
+.message-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message-inputs input {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #dcdcdc;
+}
+
+.submit-btn {
+    align-self: flex-end;
+    background-color: #706d6d;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border-color:4px solid black;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.main-container {
+    display: flex;       /* pinagtatabi */
+    gap: 40px;           /* space sa pagitan */
+    align-items: flex-start;
+    
+}
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
+
+.contacts-container {
+    margin-top: 40px;
+    width: 90px;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo Box */
+.logo-box {
+    background-color: #2b2b2b;
+    color: #bda77e; /* Metallic gold color */
+    font-size: 10rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 50px;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    margin-left: 500px;
+}
+
+/* Header Pill */
+.contacts-header {
+    background-color: #666;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px; /* Makes it a pill shape */
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 600px;
+    width: fit-content;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* List Styling */
+.contact-info {
+    margin-top: 50%;
+    margin-left: 500px;
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 15px;
+    display: flex;
+    font-size: 20px;
+}
+
+.icon {
+    margin-right: 15px;
+    width: 20px;
+    text-align: center;
+}
